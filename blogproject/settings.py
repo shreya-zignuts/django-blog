@@ -52,6 +52,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'blogproject.urls'
 
+# Redirect after login
+LOGIN_REDIRECT_URL = 'post_list'   # after login
+LOGOUT_REDIRECT_URL = 'login'     # after logout
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
